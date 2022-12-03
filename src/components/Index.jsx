@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { AuthContext } from '../context/AuthContext'
 import Logout from './Logout'
 import Signin from './Signin'
+import LamaSignin from './LamaSignin'
 
 const Index = () => {
     const {currentUser} = useContext(AuthContext)
@@ -10,10 +11,12 @@ const Index = () => {
         <>
         {
             currentUser === null ? 
-            <Signin />
+            // <Signin />
+            <LamaSignin />
             :
             <Logout />
         }
+        {/* <LamaSignin /> */}
         </>
     )
 }

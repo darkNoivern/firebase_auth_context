@@ -20,3 +20,13 @@ button{
   /* color: white; */
   cursor: pointer;
 }
+
+.username_input{
+  margin-bottom: 1.5rem;
+}
+
+input{
+  padding: 0.25rem 1rem;
+  border-radius: 0.4rem;
+  /* border: none; */
+}
